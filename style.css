@@ -1,0 +1,45 @@
+body{
+    background-image: url(images/5-dots.png);
+}
+.jumbotron{ 
+    width: 500px;
+    position: relative;
+    left: 625px;
+    top: 200px;
+    
+
+}
+.bodyhide {
+    display: none;
+}
+
+/* .bodyhide2 {
+    display: none;
+}
+
+.bodyhide3 {
+    display: none;
+}
+
+.bodyhide4 {
+    display: none;
+}
+.bodyhide5 {
+    display: none;
+}
+.bodyhide6 {
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+.scoreboard {
+    display: none;
+}
