@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Coding Quiz</title>
+</head>
+
+
+
+
+<body>
+    <div class="body">
+        <div class="jumbotron">
+        
+          <h1 class="display-4 text-center">Hi! Would you like to take a quiz?</h1>
+            <hr class="my-4">
+            
+           
+        
+            <button class="btn btn-primary btn-lg" id="startbtn">Start!</button>
+          
+        </div>
+    </div>
+    <div class="hidden">
+        <div class="bodyhide">
+          <div class="jumbotron">
+            <p id="timer"></p>
+            <p id="score"></p>
+            <br>
+            <hr class="my-4">
+            <h5 class="display text-center" id="ques">1.Which of these programming languages represent the structure of a webpage?</h5>
+                
+                    <button class="btn btn-primary btn-lg" id="ans1">CSS</button>
+                    <button class="btn btn-primary btn-lg" id="ans2">JavaScript</button>
+                    <button class="btn btn-primary btn-lg" id="ans3">HTML</button>
+                    <button class="btn btn-primary btn-lg" id="ans4">Python</button>
+                  
+
+           </div>
+        </div>
+      
+        <div class="scoreboard">
+            <div class="jumbotron">
+              <p id="timer"></p>
+              <p id="score"></p>
+                <h5 class="display text-center scoreboard" id="scorebrd">Highscore</h5>
+                <div class="row">
+                  
+                    <table class="table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Score</th>
+                        </tr>  
+                    </table>
+                </div>
+                <div class="col-sm-12 text-center" id="nextDiv">
+                    <button class="btn btn-primary btn-lg" id="restart">restart</button>
+                </div>  
+              
+             </div>
+          </div>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

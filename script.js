@@ -150,6 +150,7 @@ $("#ans1").on("click", function(){
     $(".scoreboard").show();
     
     $(".bodyhide").hide();
+    time();
 });
 
 
