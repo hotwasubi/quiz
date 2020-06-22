@@ -1,45 +1,44 @@
-body{
-    background-image: url(images/5-dots.png);
+body {
+    color: white;
 }
-.jumbotron{ 
-    width: 500px;
-    position: relative;
-    left: 625px;
-    top: 200px;
-    
-
+li {
+    list-style-type: lower-alpha;
 }
-.bodyhide {
+.body {
+    display: block;
+    background: rgb(88, 88, 81);
+    border-radius: 10px;
+    border-bottom: solid;
+    border-right: solid;
+    border-color: black;
+    padding: 20px;
+}
+.bodyHide {
     display: none;
 }
-
-/* .bodyhide2 {
+.container {
+    margin-top: 10%;
+}
+.lb {
+    display: block;
+}
+.lbHide {
     display: none;
 }
-
-.bodyhide3 {
+.q {
+    height: 350px;
+}
+.table {
+    color:black;
+}
+#goHide {
     display: none;
 }
-
-.bodyhide4 {
-    display: none;
+#nextDiv {
+    position: absolute;
+    bottom: 20px;
 }
-.bodyhide5 {
-    display: none;
-}
-.bodyhide6 {
-    display: none;
-} */
-
-
-
-
-
-
-
-
-
-
-.scoreboard {
-    display: none;
+#timer {
+    margin-left: 20px;
+    padding-right: 30px;
 }

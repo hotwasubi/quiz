@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>JavaScript Quiz</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Coding Quiz</title>
+
 </head>
-
-
-
-
 <body>
-    <div class="body">
-        <div class="jumbotron">
-        
-          <h1 class="display-4 text-center">Hi! Would you like to take a quiz?</h1>
-            <hr class="my-4">
-            
-           
-        
-            <button class="btn btn-primary btn-lg" id="startbtn">Start!</button>
-          
-        </div>
-    </div>
-    <div class="hidden">
-        <div class="bodyhide">
-          <div class="jumbotron">
-            <p id="timer"></p>
-            <p id="score"></p>
-            <br>
-            <hr class="my-4">
-            <h5 class="display text-center" id="ques">1.Which of these programming languages represent the structure of a webpage?</h5>
-                
-                    <button class="btn btn-primary btn-lg" id="ans1">CSS</button>
-                    <button class="btn btn-primary btn-lg" id="ans2">JavaScript</button>
-                    <button class="btn btn-primary btn-lg" id="ans3">HTML</button>
-                    <button class="btn btn-primary btn-lg" id="ans4">Python</button>
-                  
-
-           </div>
-        </div>
-      
-        <div class="scoreboard">
-            <div class="jumbotron">
-              <p id="timer"></p>
-              <p id="score"></p>
-                <h5 class="display text-center scoreboard" id="scorebrd">Highscore</h5>
+    <div class="container">
+     
+        <div class="row">
+            <div class="col-sm-4"></div>
+             
+            <div class="col-sm-4 body">
                 <div class="row">
-                  
+                    <div class="col-sm">
+                        <h1 class="text-center">Take the Quiz!</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm text-center">
+                        <button class="text-center rounded " id="go">GO!</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 bodyHide">
+                <div class="row">
+                    <p id="timer"></p>
+                    <p id="score"></p>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="text-center" id="quesNum">Question 1</h3>
+                        
+                        <p id='ques'>Which of these programming languages represent the structure of a webpage?</p>
+                        
+                        <ul>
+                            <li id="ans1"><input type="radio" id="a" name="ans">CSS</li>
+                            <li id="ans2"><input type="radio" id="b" name="ans">JavaScript</li>
+                            <li id="ans3"><input type="radio" id="c" name="ans">HTML</li>
+                            <li id="ans4"><input type="radio" id="d" name="ans">Python</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 text-center" id="nextDiv">
+                        <button class="text-center rounded" id="next">next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+
+            <div class="col-sm-6 lbHide">
+                <div class="row">
+                    <h3>High Scores</h3>
+                </div>
+
+                <div class="row">
                     <table class="table">
                         <tr>
                             <th>Name</th>
@@ -57,16 +83,20 @@
                         </tr>  
                     </table>
                 </div>
-                <div class="col-sm-12 text-center" id="nextDiv">
-                    <button class="btn btn-primary btn-lg" id="restart">restart</button>
-                </div>  
-              
-             </div>
-          </div>
+            
+                <div class="col-sm-12 text-center">
+                    <button class="text-center rounded" id="restart">restart</button>
+                    <button class="text-center rounded" id="clear">clear scores</button>
+                </div>    
+            </div>
 
+            <div class="col-sm-3"></div>
 
-    
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
+
